@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosas que amo de ti ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+min-height:100vh;
+}
+
+h1{
+margin-top:40px;
+color:#333;
+}
+
+.board{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+max-width:750px;
+padding:40px;
+}
+
+.note{
+width:170px;
+min-height:120px;
+background:#fff7a6;
+padding:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+border-radius:6px;
+transform:rotate(-2deg);
+opacity:0;
+transition:opacity 1s, transform 0.5s;
+}
+
+.note:nth-child(even){
+transform:rotate(2deg);
+}
+
+.final{
+background:#ffd1dc;
+font-weight:bold;
+}
+
+.show{
+opacity:1;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Cosas que amo de ti 💛</h1>
+
+<div class="board">
+
+<div class="note">Tus ojos</div>
+
+<div class="note">Tus abrazos</div>
+
+<div class="note">Tus besitos</div>
+
+<div class="note">Tu comida</div>
+
+<div class="note">Lo linda que eres conmigo</div>
+
+<div class="note">Que sabes darme mi lugar</div>
+
+<div class="note">Que siempre haces tu mayor esfuerzo</div>
+
+<div class="note">Lo valiente que eres</div>
+
+<div class="note">Lo dedicada y disciplinada que eres</div>
+
+<div class="note">Que me amas por quien soy</div>
+
+<div class="note final">
+Y la razón más importante… eres tú.
+Y eso jamás lo cambiaría.
+Si te tengo a ti, lo tengo todo ❤️
+</div>
+
+</div>
+
+<script>
+
+const notes=document.querySelectorAll(".note");
+
+notes.forEach((note,index)=>{
+setTimeout(()=>{
+note.classList.add("show");
+}, index*700);
+});
+
+</script>
+
+</body>
+</html>
