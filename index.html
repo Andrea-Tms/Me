@@ -68,6 +68,14 @@ font-size:20px;
 animation:float 6s linear infinite;
 }
 
+.buttons{
+display:flex;
+gap:20px;
+justify-content:center;
+margin-top:20px;
+flex-wrap:wrap;
+}
+  
 @keyframes float{
 0%{
 transform:translateY(100vh);
@@ -107,6 +115,7 @@ I wish you could see yourself the way I see you, then you’d understand how muc
 
 <script>
 
+<div class="buttons">
 function playSong(){
 window.location.href="https://open.spotify.com/track/50x1Ic8CaXkYNvjmxe3WXy?si=P5nrN5VtQLegmSp3mSjlmw";
 }
@@ -114,7 +123,7 @@ window.location.href="https://open.spotify.com/track/50x1Ic8CaXkYNvjmxe3WXy?si=P
 function openNotes(){
 window.location.href="note.html";
 }
-
+</div>
 function createHeart(){
 const heart=document.createElement("div");
 heart.classList.add("heart");
